@@ -1,0 +1,31 @@
+h1{ 
+	font-size: 30px;
+	font-family: tahoma;
+	color: #000;
+}
+p{
+	font-size: 25px;
+	font-family: arial;
+	color: #000;
+}
+section{
+	padding: 30px;
+}
+article{
+	 width: 300px;
+}
+.caja{
+	margin-top: 45px;
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+button{
+	padding: 6px;
+	border: none;
+	border-radius: 5px;
+	background: orange;
+	color: white;
+	font-size:15px;
+}

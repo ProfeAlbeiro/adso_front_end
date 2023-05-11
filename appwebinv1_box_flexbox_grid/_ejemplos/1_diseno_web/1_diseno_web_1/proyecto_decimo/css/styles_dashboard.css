@@ -1,0 +1,69 @@
+*{	
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+/* Navegación  */
+nav{
+	width: 100%;
+	height: 50px;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.navega{
+	width: 65%;
+	height: 100%;
+	float: left;
+}
+.ingreso{
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+/* Sección */
+section{
+	width: 100%;
+	height: 700px;	
+}
+/* Panel Lateral */
+aside{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.configura{
+	width: 100%;
+	height: 16%;
+}
+.modulo{
+	width: 100%;
+	height: 28%;
+}
+/* Área de Trabajo */
+main{
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+/* Pie de Página */
+footer{
+	width: 100%;
+	height: 50px;
+}
+.pie-izq{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.pie-der{
+	width: 80%;
+	height: 100%;
+	float: left;
+}

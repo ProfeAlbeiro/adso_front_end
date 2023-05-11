@@ -1,0 +1,49 @@
+.borde{
+	border: 1px solid #dcdcdc;
+	/*padding: 10px;*/
+}
+.container{	
+	max-width: 1200px;
+	width: 95%;
+}
+.nav-color-fondo{
+	background: rgba(0,0,0,0.8);
+	border-bottom: 1px solid #fff;
+}
+.navbar a{
+	color: #fff;
+}
+.navbar .dropdown-menu .dropdown-item{
+	color: #888;
+}
+.navbar i{
+	color: #fff;
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 2px;	
+}
+section{
+	min-height: 550px;
+}
+footer{
+	background: rgba(0,147,198,1);
+	text-align: center;
+	padding-top: 10px;
+	color: #ddd;
+}
+footer p{
+	margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar{
+		position: fixed;		
+		width: 94.8%;
+		max-width: 1198px;
+		z-index: 1;	
+	}
+	.margen-sup{
+		padding-top: 80px;
+	}
+}

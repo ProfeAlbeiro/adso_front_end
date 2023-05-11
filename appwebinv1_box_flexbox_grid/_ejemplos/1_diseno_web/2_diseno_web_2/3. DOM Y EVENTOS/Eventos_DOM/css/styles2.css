@@ -1,0 +1,55 @@
+*{
+	font-family: tahoma;
+}
+h1{
+	text-align: center;
+	font-size: 40px;
+}
+.contenedorBotones{
+	margin-left: 40%;	
+}
+.boton1{
+	border:none;
+	padding: 8px;
+	border-radius: 2px;
+	margin-bottom: 5px;
+}
+.boton2{
+	border:none;
+	padding: 8px;
+	border-radius: 2px;
+	background-color: orange;
+	color: #fff;
+	font-size: 15px;
+}
+.boton3{
+	border:none;
+	padding: 8px;
+	border-radius: 2px;
+	background-color: #ef1569;
+	color: #fff;
+	font-size: 15px;
+}
+.boton4{
+	border:none;
+	padding: 8px;
+	border-radius: 2px;
+	background-color: #10b72f;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+#espacio{
+	width: 560px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+#favcolor{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+

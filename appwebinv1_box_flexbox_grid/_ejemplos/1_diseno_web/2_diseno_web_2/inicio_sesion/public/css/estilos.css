@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Sriracha&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.modal{
+	font-family: 'Balsamiq Sans', cursive;
+	font-family: 'Sriracha', cursive;
+}
+
+.modal form input{
+	border: 2px solid #fff;
+}
+
+.modal form input:focus:valid{
+	border-color: green;
+}
+
+.modal form input:focus:invalid{
+	border-color: red;
+}
+.modal form input:valid{
+	border-color: green;
+}
+
+.modal form input:invalid{
+	border-color: orange;
+}
+
+

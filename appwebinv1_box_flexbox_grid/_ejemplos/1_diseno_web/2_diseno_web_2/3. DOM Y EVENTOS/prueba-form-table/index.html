@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Form and Table</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head> 
+<body>
+	<div class="container">
+		<!-- Formulario -->
+		<h1 class="text-center">Crear Usuario</h1>
+		<div class="row justify-content-center">
+			<form class="col-8 border" id="formPrueba">
+				<div class="form-row">
+					<div class="form-group"></div>
+					<div class="form-group col-md-6">
+						<label for="inputEmail4">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="inputPassword4">Apellido</label>
+						<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="inputCity">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="user@correo.com">
+					</div>					
+				</div>				
+				<div class="form-group text-center">
+					<button type="button" class="btn btn-primary mb-2" onclick="pasaDatos();">Enviar</button>
+					<input type="button" value="buscar" onclick="consultarDatos();" class="btn btn-primary mb-2">
+				</div>
+			</form>
+		</div>
+		
+		<hr>
+		<!-- Tabla -->
+		<h1 class="text-center">Consultar Usuario</h1>
+		<div class="row mt-5">
+			<table id="myTable" class="col table table-striped">
+				<thead>
+					<tr>
+						<th>Apellido</th>
+						<th>Nombre</th>
+						<th>E-mail</th>
+						<th>Opciones de Edición</th>
+					</tr>
+				</thead>
+				<tbody id="tbody">
+					<tr id="fila_1">
+						<td id="user1_ap"></td>
+						<td id="user1_nom"></td>
+						<td id="user1_email" class="correo"></td>
+						<td>
+							<button class="editar btn btn-info" onclick="editarFila(this)"><i class="fa fa-pencil"></i></button>
+							<button class="insertar btn btn-primary" onclick="insertarFila(this)"><i class="fa fa-plus"></i></button>
+							<button class="copiar btn btn-warning" onclick="copiarFila(this)"><i class="fa fa-clone"></i></button>
+							<button class="eliminar btn btn-danger" onclick="borrarFila(this)"><i class="fa fa-trash-o"></i></button>
+						</td>
+					</tr>
+					<tr id="fila_2">
+						<td id="user2_ap"></td>
+						<td id="user2_nom"></td>
+						<td id="user2_email" class="correo"></td>
+						<td id="botones">
+							<button class="editar btn btn-info m-0" onclick="editarFila(this)"><i class="fa fa-pencil"></i></button>
+							<button class="insertar btn btn-primary" onclick="insertarFila(this)"><i class="fa fa-plus"></i></button>
+							<button class="copiar btn btn-warning" onclick="copiarFila(this)"><i class="fa fa-clone"></i></button>
+							<button class="eliminar btn btn-danger" onclick="borrarFila(this)"><i class="fa fa-trash-o"></i></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/form-table.js"></script>
+</body>
+</html>

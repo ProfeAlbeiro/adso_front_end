@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Administrador</title>
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="shortcut icon" href="img/favicon-perfil.png">
+	<link rel="stylesheet" href="css/estilos-admin.css">
+</head>
+<body>
+	<div class="contenedor">
+		<!-- Navegador -->
+		<nav>
+			<div class="logo">
+				<img src="img/logo-sistema.png" alt="">
+			</div>
+			<div class="navega">
+				<div class="documentacion">
+					<ul>
+						<li><a href="">Documentación</a>
+							<ul>
+								<li><a href="">Fase I</a>
+									<ul>
+										<li><a href="doc/Fase_1/1_PlantillaProyecto.pdf" target="area-principal">Doc. Proyecto</a></li>
+										<li><a href="">Diagr. Proceso</a></li>
+										<li><a href="">Diagr. C.U.</a></li>
+										<li><a href="">C.U. Extendido</a></li>
+										<li><a href="">WireFrames</a></li>
+										<li><a href="">Doc. IEEE 830</a></li>
+									</ul>
+								</li>
+								<li><a href="">Fase II</a>
+									<ul>
+										<li><a href="">Doc Análisis</a></li>
+										<li><a href="">Diagr. Actividades</a></li>
+										<li><a href="">Diagr. Conceptos</a></li>
+										<li><a href="">Diagr. paquetes</a></li>
+										<li><a href="">Diagr. Clases</a></li>
+										<li><a href="">Diagr. Secuencia</a></li>
+										<li><a href="">Diagr. Estados</a></li>
+										<li><a href="">Diagr. MER</a></li>
+										<li><a href="">Modelo Canvas</a></li>
+										<li><a href="">Diagr de Gantt</a></li>
+										<li><a href="">Mockups</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="notificacion">
+					<ul>
+						<li title="Principal"><a href="html/pág_principales/admin-principal.html" target="area-principal"><i class="fas fa-home"></i></a></li>
+						<li title="Calendario"><a href=""><i class="far fa-calendar-alt"></i></a></li>
+						<li title="Alerta"><a href=""><i class="fas fa-bell"></i></a></li>
+						<li title="Actividades"><a href=""><i class="fas fa-tasks"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ingreso">				
+				<ul>
+					<li><a href="">Administrador</a>
+						<ul>
+							<li><a href="html/mód_1_usuarios/configura-perfil.html" target="area-principal">Configuración</a></li>
+							<li><a href="../index.html">Salir</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<aside>
+			<div class="borde mod-perfil">
+				<div class="img-perfil">
+					<i class="borde fas fa-user-tie"></i>
+				</div>
+				<div class="descr-perfil">
+					<h1>Administrador</h1>
+					<p>Nombre completo</p>
+					<a href="html/mód_1_usuarios/configura-perfil.html" target="area-principal">Configuración</a>					
+				</div>
+			</div>
+			<div class="borde mod-usuarios">
+				<h3>MÓD1 - Usuarios</h3>
+				<h4>Registrar Usuario</h4>
+				<div class="opciones">
+					<a href="html/mód_1_usuarios/crear-usuarios.html" target="area-principal">Crear Usuario</a>
+					<a href="html/mód_1_usuarios/consultar-usuarios.html" target="area-principal">Consultar Usuarios</a>
+					<a href="html/mód_1_usuarios/reporte-usuarios.html" target="area-principal">Reporte Usuario</a>
+					<a href="html/mód_1_usuarios/alertas.html" target="area-principal">SweetAlert.s</a>
+					<a href="html/mód_1_usuarios/data-tables.html" target="area-principal">DataTables.js</a>
+					<a href="html/mód_1_usuarios/graficos.html" target="area-principal">Canvas.jas</a>
+				</div>
+			</div>
+			
+		</aside>
+		<!-- Principal -->
+		<main>
+			<iframe name="area-principal" src="html/pág_principales/admin-principal.html"></iframe>
+		</main>
+		<footer>
+			<div class="borde foot-izq">
+				<ul>
+					<li title="Calendario"><a href=""><i class="far fa-calendar-alt"></i></a></li>
+					<li title="Alertas"><a href=""><i class="fas fa-bell"></i></a></li>
+					<li title="Actividades"><a href=""><i class="fas fa-tasks"></i></a></li>
+					<li title="Salir"><a href="../index.html">Salir</a></li>
+				</ul>
+			</div>
+			<div class="borde foot-der">
+				<p>Realizado por: Albeiro Ramos</p>
+				<p>Copyright © - 2019. Todos los Derechos Reservados</p>
+			</div>
+		</footer>
+	</div>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/script-ejemplo.js"></script>
+</body>
+</html>

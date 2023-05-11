@@ -1,0 +1,234 @@
+ /*Escritorio - Portátil*/
+ *{
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ /* Clases especiales */
+ .borde{
+ 	border: 1px solid gray;
+ }
+ /* Contenedor */
+ .contenedor{
+ 	width: 95%;
+ 	max-width: 1200px;
+ 	margin: auto;
+ 	margin-top: 8px;
+ }
+ /* Navegador */
+ nav{
+ 	height: 50px;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	background: #333;
+ }
+ .logo{
+ 	flex: 25%;
+ 	background: #aaa;
+ }
+ .navega{
+ 	flex: 60%;
+ }
+ .salir{
+ 	flex: 15%;
+ 	background: #666;	
+ }
+ /* Sección Principal */
+ section{
+ 	height: 83vh;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ }
+ /* Botón de Menú */
+ #btn-menu-lateral{
+ 	position: absolute;
+ 	font-size: 2em;
+ 	left: 29.5%;
+ 	top: 9px;
+ 	cursor: pointer;
+ 	color: #fff;
+ }
+ .activar-panel{
+ 	width: 0;
+ 	transition: all 500ms linear;
+ }
+ /* Panel Lateral */
+ aside{
+ 	width: 25%;	
+ 	transition: all 500ms linear;
+ 	background: #d2d2d2; 	
+ }
+ .mod-conf{
+ 	height: 16vh;
+ 	overflow: hidden;
+ 	border-bottom: 1px solid gray;	
+ 	white-space: nowrap;
+ }
+ .modulos{
+ 	height: 66.5vh;
+ 	overflow-y: scroll;
+ 	overflow-x: hidden;
+ }
+ .modulo{
+ 	min-height: 33.33%;
+ 	border-top: 1px solid gray; 	
+ }
+ .modulo h1, .mod-conf h1{
+ 	text-align: center;
+ 	padding: 5px;
+ 	white-space: nowrap;	
+ }
+ #mod-cuerpo-0, #mod-cuerpo-1, #mod-cuerpo-2, #mod-cuerpo-3{ 	
+ 	white-space: nowrap;
+ 	padding: 0 20px; 	
+ }
+ /* Área de Trabajo */
+ main{
+ 	flex: 1;
+ 	height: 83vh;	
+ 	overflow-y: scroll;
+ 	overflow-x: hidden; 	
+ }
+ /* Pie de Página */
+ footer{
+ 	height: 70px;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	background: #aaa;	
+ }
+ .pie-izq{
+ 	flex: 25%;
+ 	background: #333; 	
+ }
+ .pie-der{
+ 	flex: 75%;
+ }
+ /* Tablet */
+ @media only screen and (max-width: 992px) {
+ 	/* Navegador */
+ 	nav{
+ 		height: 100px; 		
+ 	}
+ 	.logo{
+ 		flex: 25%;
+ 	}
+ 	.navega{
+ 		flex: 75%;
+ 	}
+ 	.salir{
+ 		flex: 1;	
+ 	}
+ 	/* Sección Principal */
+ 	section{
+ 		height: 76.4vh; 		
+ 		flex-flow: column wrap;
+ 	}
+ 	.activar-panel{
+ 		width: 100%;
+ 		height: 0;
+ 		transition: all 500ms linear;
+ 	}
+ 	/* Panel Lateral */
+ 	aside{
+ 		width: 100%;
+ 		height: 50px;
+ 		transition: all 500ms linear;
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		border: 0!important;
+ 	}
+ 	.mod-conf{
+ 		flex: 25%;
+ 		height: 100%;
+ 		overflow: hidden; 		
+ 	}
+ 	.modulos{
+ 		flex: 75%;
+ 		height: 100%; 		
+ 		min-height: 100%; 		
+ 	}
+ 	.modulo{
+ 		width: 33.33%;
+ 		height: 100%;
+ 		border: 1px solid gray;
+ 		float: left;
+ 	}
+ 	.modulo h1, .mod-conf h1{
+ 		text-align: center;
+ 		font-size: 0.9em;
+ 		height: 100%;
+ 		cursor: pointer; 		
+ 		padding: 15px 0;
+ 		white-space: normal;		
+ 	}
+ 	#mod-cuerpo-0, #mod-cuerpo-1, #mod-cuerpo-2, #mod-cuerpo-3{
+ 		position: absolute;
+ 		z-index: 10;
+ 		width: 23.5%;
+ 		padding: 0 20px; 		
+ 		overflow: hidden; 		
+ 		transition: all 500ms linear; 		
+ 		background: #f2f2f2;
+ 		white-space: normal;
+ 	} 	
+ 	.activar-mod-cuerpo-0, .activar-mod-cuerpo-1, .activar-mod-cuerpo-2, .activar-mod-cuerpo-3{ 		
+ 		height: 0!important;
+ 		transition: all 500ms linear;
+ 	}
+ 	/* Área de Trabajo */
+ 	main{ 		
+ 		height: 76.4vh; 		
+ 	}
+ }
+ /* Celular */
+ @media only screen and (max-width: 576px){
+ 	/* Navegador */
+ 	nav{
+ 		height: 150px; 		
+ 	}
+ 	.logo, .navega, .salir{
+ 		flex: 100%;
+ 	}
+ 	/* Sección Principal */
+ 	section{
+ 		height: 69.8vh;
+ 	}
+ 	/* Botón de Menú */
+ 	#btn-menu-lateral{ 		
+ 		left: 4.5%;
+ 		top: 109px;
+ 	}
+ 	.activar-panel{
+ 		width: 0;
+ 		height: 100%;
+ 		transition: all 500ms linear;
+ 	} 	
+ 	/* Panel Lateral */
+ 	aside{
+ 		width: 100%;
+ 		height: 100%;
+ 		display: block; 		
+ 	}
+ 	.mod-conf{
+ 		height: 25%; 		
+ 	}
+ 	.modulos{ 		
+ 		min-height: 0;
+ 		height: 100%; 		
+ 	}
+ 	.modulo{
+ 		width: 100%;
+ 		height: 25%;
+ 		min-height: 0;
+ 		float: none;
+ 	}
+ 	.modulo h1, .mod-conf h1{ 		
+ 		white-space: nowrap;		
+ 	}
+ 	main{ 		
+ 		position: absolute;
+ 		height: 69.9vh;
+ 		width: 95%;
+ 		z-index: -10;
+ 	}
+ } 

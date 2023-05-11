@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+p{
+	margin-top: 20px;
+}
+
+/* Clases especiales */
+.borde{
+	border: 1px solid #aaa;
+}
+.titulo{
+	width: 100%;
+	height: 50px;
+	padding: 65px;
+	background: #D95825;	
+	text-align: center;
+	color: #fff;
+}
+.alin-der{
+	text-align: right;
+}
+.opaco{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 400px 0 0 0;
+	font-size: 2em;
+	color: #fff;
+}
+
+/* Cuerpo*/
+body{
+	background-image: url(../img/fondo-landing.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;	
+}
+
+/* Contenedor */
+.contenedor{
+	width: 100%;
+	max-width: 1280px;
+	background: rgba(255,255,255,0.9);
+	margin: auto;
+}
+
+/* Navegador */
+nav{
+	width: 100%;
+	height: 50px;
+	max-width: 1280px;
+	position: fixed;
+}
+.logo{
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	background: #F4F3F3;
+	float: left;
+}
+.logo img{
+	width: auto;
+	height: 100%;
+}
+.navega{
+	width: 70%;
+	height: 100%;
+	padding: 0 10px;
+	background: #005D74;
+	float: left;
+}
+.ingreso{
+	width: 15%;
+	height: 100%;
+	background: #01ACC0;
+	float: left;
+}
+/* Nivel 0 */
+nav ul{
+	list-style: none;
+	text-align: right;
+}
+nav ul li{
+	width: 130px;	
+}
+nav ul li:hover>ul{
+	display: block;
+}
+nav .navega ul li{
+	background: #005D74;		
+}
+nav .navega>ul>li{
+	display: inline-block;
+}
+nav .ingreso ul li{
+	width: 100%;
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 5px;
+	text-align: center;
+	border-bottom: 2px solid #fff;
+}
+nav ul li a:hover{
+	background: rgba(0,0,0,0.5);
+	border-bottom: 2px solid #D95825;
+}
+/* Nivel 1 */
+nav li ul{
+	position: absolute;
+	display: none;
+}
+nav .ingreso li ul{
+	background: #01ACC0;
+	width: 15%;
+}
+nav li ul li{
+	position: relative;
+}
+
+/* Nivel 2 */
+nav li ul li ul{
+	left: 130px;
+	top: 2px;
+}
+
+/* Encabezado */
+header{
+	width: 100%;
+	height: 823px;
+	background-image: url('../img/fondo-header.jpg');
+	background-size: 100% 100%;
+}
+
+/* Portafolio */
+main{
+	width: 100%;
+	height: 700px;
+}
+.col-porta{
+	width: 33.33%;
+	height: 100%;
+	padding: 35px;
+	text-align: center;
+	float: left;
+}
+.col-porta h2{
+	text-align: center;
+}
+.col-porta p{
+	text-align: justify;
+}
+.col-porta img{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+/* Quiénes somos y Contáctenos */
+section{
+	width: 100%;
+	height: 700px;
+}
+
+/* Quiénes somos */
+.quienes-somos{
+
+}
+.fila{
+	width: 100%;
+	height: 33.33%;
+}
+.col-ext{
+	width: 40%;
+	height: 100%;
+	padding: 50px 20px 10px 20px;
+	float: left;
+}
+.col-cnt{
+	width: 20%;
+	height: 100%;
+	padding: 35px 20px 10px 20px;
+	text-align: center;
+	float: left;
+}
+.col-cnt img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/* Contáctenos */
+.contactenos{
+
+}
+
+.col-izq, .col-der{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.col-arr{
+	width: 100%;
+	height: 70%;
+	border: 1px solid #ddd;
+}
+.col-arr iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.col-abj{
+	width: 100%;
+	height: 30%;
+	background: #F4F3F3;
+	padding: 40px 10px 10px 10px;
+	border: 1px solid #ddd;
+	text-align: center;
+	font-weight: bold;
+}
+.col-abj p{
+	margin: 0;
+}
+.col-abj .fab{
+	display: inline-block;
+	padding: 0px 10px;
+	font-size: 4em;
+	color: #333;
+	margin: 20px 0 0 0;
+}
+
+/* Formulario de contacto */
+form{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ddd;
+	padding: 16% 20px 20px 20px;
+	background: #ddd;
+}
+.form-enc{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+form h1{
+	text-align: center;
+	background: #eee;
+	padding:5px;
+}
+.form-cuerpo{
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #aaa;
+}
+label, input{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+label{
+	padding: 10px;
+	width: 15%;
+}
+input{
+	padding: 10px;
+	width: 82.5%;
+}
+.nombres-apellidos input{
+	width: 33%;
+}
+.mensaje label{
+	vertical-align: top;
+}
+textarea{
+	display: inline-block;
+	width: 82.5%;
+	height: 200px;
+	padding: 10px;
+	resize: none;
+}
+.form-pie{
+	width: 100%;
+	padding: 10px 10px 0 10px;
+	text-align: center;
+}
+form a{
+	display: inline-block;
+	width: 90px;
+	height: 40px;
+	padding: 13px;
+	background: #aaa;
+	text-decoration: none;
+	text-align: center;
+	color: #333;
+	font-size: 0.8em;
+	border-radius: 5px;
+}
+.olvido{
+	padding: 0;
+	background: 0;
+	width: 180px;
+	text-align: right;
+}
+form a:hover{
+	background: rgba(0,0,0,0.5);
+}
+.olvido:hover{
+	background: 0;
+	color: #999;
+}
+
+/* Pie de página */
+footer{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	background: #005D74;
+}
+footer p{
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	font-size: 0.8em;
+}

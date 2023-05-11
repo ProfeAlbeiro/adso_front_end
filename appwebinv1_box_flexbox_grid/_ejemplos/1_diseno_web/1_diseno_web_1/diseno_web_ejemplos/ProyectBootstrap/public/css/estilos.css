@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.titulo{
+	/*width: 100%;*/
+	height: 60px;
+	text-align: center;	
+	color: white;
+	font-size: 2em;
+	padding: 10px;	
+	background: #E64229!important;
+}
+
+.nav-pers{
+	background: #E64229!important;
+}
+nav ul li>a{
+	color: white!important;
+}
+
+footer{
+	height: 60px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	padding: 10px;		
+}
+
+.modal form input:focus:valid{
+	border-color: green;
+}
+
+.modal form input:focus:invalid{
+	border-color: red;
+}
+
+.modal form input:valid{
+	border-color: green;
+}
+
+.modal form input:invalid{
+	border-color: red;
+}

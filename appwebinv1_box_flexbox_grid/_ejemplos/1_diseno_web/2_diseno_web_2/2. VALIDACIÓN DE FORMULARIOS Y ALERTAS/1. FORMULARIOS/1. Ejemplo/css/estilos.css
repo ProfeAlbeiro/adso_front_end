@@ -1,0 +1,70 @@
+*:focus{
+	outline:none;
+}
+body{
+	font:14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;	
+}
+/*.contact_form{
+	width:800px;
+	margin:auto;
+}*/
+.contact_form h2, .contact_form label{
+	font-family: Georgia, Times, "Times new Roman", serif;
+}
+.for_hint, .required_notification{
+	font-size:11px;
+}
+.contact_form ul{
+	width: 750px;
+	list-style-type:none;
+	list-style-position:inside;
+	margin:0px;
+	padding:0px;
+}
+.contact_form li{
+	padding:12px;
+	border-bottom: 1px solid #eee;
+	position:relative;
+}
+.contact_form li:first-child, .contact_form li:last-child{
+	border-bottom:1px solid #777;
+}
+.contact_form h2{
+	margin:0px;
+	display:inline;
+}
+.required_notification{
+	color: #d45252;
+	margin:5px 0px 0px 0px;
+	display:inline;
+	float:right;
+}
+.contact_form label{
+	width: 150px;
+	margin-top:3px;
+	display:inline-block;
+	float:left;
+	padding:3px;
+}
+.contact_form input{
+	height: 20px;
+	width:220px;
+	padding: 5px 8px;
+}
+.contact_form textarea{
+	padding:8px;
+	width:300px;
+}
+.contact_form button{
+	margin-left:156px;
+}
+.contact_form input, .contact_form textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff; 
+    border:1px solid #fff; 
+    box-shadow: 0 0 3px #aaa;
+ }

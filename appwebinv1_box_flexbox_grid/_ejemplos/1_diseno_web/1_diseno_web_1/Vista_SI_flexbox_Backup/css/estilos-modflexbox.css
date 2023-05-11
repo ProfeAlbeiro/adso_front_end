@@ -1,0 +1,273 @@
+/* Estilo fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+/* Escritorio, portatil */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;		
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-image: url('../img/fondo.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+.titulo{
+	background: #DAD1CE;
+	padding: 80px 0 10px 0;
+}
+.titulo h1{
+	text-align: center;
+	font-size: 3em;
+}
+/* Contenedor */
+.contenedor{
+	width: 90%;	
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-flow: column wrap;	
+}
+/* Navegador */
+nav{
+	width: 90%;
+	max-width: 1200px;	
+	height: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	position: fixed;
+}
+.logo{
+	flex: 20%;
+	height: 100%;	
+	background: #F87C35;
+	text-align: center;
+	padding: 5px;
+	float: left;
+}
+.logo img{
+	height: 100%;
+}
+.navega{
+	flex: 65%;
+	height: 100%;
+	background: #2B9EA5;
+	height: 100%;
+	float: left;
+	text-align: right;
+}
+nav ul{
+	list-style: none;	
+}
+nav ul li{
+	display: inline-block;
+	width: 130px;
+}
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 16px;
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+}
+nav ul li a:hover{
+	background: rgba(0,0,0,0.5);
+}
+.ingreso{
+	flex: 15%;
+	background: #666;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+/* Encabezado */
+header{	
+	height: 95vh;
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+.head-opc{
+	width: 100%;
+	height: 100%;
+	padding-top: 45%;
+	color: #ddd;
+	text-align: center;
+	background: rgba(0,0,0,0.6);
+}
+.head-opc h1{
+	font-size: 5em;
+}
+.head-opc h2{
+	font-size: 2.5em;	
+}
+/* Secciones */
+section{
+	min-height: 80vh;
+	display: flex;
+}
+/* Portafolio */
+.portafolio{	
+	/*height: auto;	*/
+	background: rgba(218, 209, 206, 0.9);
+	flex-flow: row wrap;	
+	text-align: center;
+}
+.col-port-izq, .col-port-cnt, .col-port-der{	
+	flex: 1;
+	overflow: hidden;
+	padding: 30px;
+}
+.portafolio h2{
+	padding: 20px 0;
+}
+.portafolio img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.portafolio p{
+	padding: 20px 0 0 0;
+	text-align: justify;
+}
+/* Nosotros */
+.nosotros{	
+	background: rgba(74, 78, 93, 0.9);
+	display: flex;
+	flex-flow: column wrap;
+}
+.nosotros h2{
+	padding: 20px;
+}
+.nosotros p{
+	text-align: justify;
+	padding: 20px;
+}
+.fila-nos-arb, .fila-nos-cnt, .fila-nos-abj{
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+}
+.col-nos-izq, .col-nos-der{
+	flex: 40%;
+	display: flex;
+	flex-flow: column wrap;
+}
+.col-nos-cnt{
+	flex: 20%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.col-nos-cnt img{	
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;	
+}
+/* Contáctenos */
+.contactenos{
+	background: rgba(218, 209, 206, 0.9);
+	flex-flow: row wrap;
+}
+.col-cont-izq, .col-cont-der{
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;
+}
+.fila-arb-cont{
+	flex: 65%;	
+}
+.fila-arb-cont iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.fila-abj-cont{
+	flex: 35%;	
+	text-align: center;
+}
+.fila-abj-cont .fab{
+	font-size: 5em;
+	display: inline-block;
+	padding: 10px;
+	color: #000;	
+}
+.fila-abj-cont .fab:hover{
+	color: #fff;
+}
+/* Pie de página */
+footer{	
+	height: 70px;
+	background: #333;
+}
+/* Tablet */
+@media only screen and (max-width: 992px) {
+	/* Navegador */	
+	nav{	
+		height: 100px;
+	}	
+	.logo{		
+		flex: 20%;
+	}
+	.navega{		
+		flex: 80%;		
+	}
+	.ingreso{		
+		flex: 100%;		
+	}
+	/* Portafolio */		
+	.col-port-izq{
+		flex: 100%;
+	}
+	.col-port-cnt, .col-port-der{
+		flex: 50%;
+	}
+	/* Nosotros */	
+	.fila-nos-arb .col-nos-der,
+	.fila-nos-cnt .col-nos-izq,
+	.fila-nos-abj .col-nos-der{
+		display: none;
+	}
+	/* Contáctenos */
+	.contactenos{
+		height: 1200px;
+	}	
+	.col-cont-izq, .col-cont-der{
+		flex: 100%;
+	}	
+}
+/* Celular */
+@media only screen and (max-width: 576px) {
+	/* Navegador */
+	nav{	
+		height: 150px;
+	}
+	.logo, .navega, .ingreso{
+		flex: 100%;
+	}	
+	/* Portafolio */		
+	.col-port-izq, .col-port-cnt, .col-port-der{
+		flex: 100%;
+	}
+	/* Nosotros */
+	.nosotros{
+		height: 1200px;
+	}
+	.col-nos-izq, .col-nos-der{
+		flex: 100%;
+		order: 2;
+	}
+	.col-nos-cnt{		
+		flex: 100%;
+		order: 1;
+	}
+}

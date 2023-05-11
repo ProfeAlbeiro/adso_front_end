@@ -1,0 +1,77 @@
+.borde{
+	border: 1px solid #dcdcdc;
+	/*padding: 10px;*/
+}
+.opaco{
+	background: rgba(0,0,0,0.5);
+	padding: 10px;
+	border-radius: 5px;
+}
+.titulo{
+	background: rgba(0,147,198,0.7);
+	padding-top: 70px;
+	padding-bottom: 15px;	
+}
+.container{	
+	max-width: 1200px;
+	width: 95%;
+}
+.nav-color-fondo{
+	background: rgba(0,147,198,1);
+	border-bottom: 1px solid #fff;
+}
+.navbar a{
+	color: #fff;
+}
+.navbar .dropdown-menu .dropdown-item{
+	color: #888;
+}
+.navbar i{
+	color: #fff;
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 2px;	
+}
+section{
+	min-height: 550px;
+}
+footer{
+	background: rgba(0,147,198,1);
+	text-align: center;
+	padding-top: 10px;
+	color: #ddd;
+}
+footer p{
+	margin: 0;
+}
+
+.modal form input:focus:valid{
+	border-color: green;
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+}
+
+.modal form input:focus:invalid{
+	border-color: red;
+}
+
+.modal form input:valid{
+	border-color: green;
+}
+
+.modal form input:invalid{
+	border-color: red;
+}
+
+
+@media screen and (min-width: 992px) {
+	.navbar{
+		position: fixed;		
+		width: 94.8%;
+		max-width: 1198px;
+		z-index: 1;	
+	}
+	.carousel{
+		margin-top: 50px;
+	}
+}

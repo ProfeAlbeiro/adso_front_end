@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.padre{
+	height: 50px;
+	display: flex;
+	flex-wrap: row wrap;	
+}
+
+.hijo1, .hijo2, .hijo3{
+	padding: 10px;
+}
+.hijo1{
+	flex: 0 0 20%;	
+	border: 1px solid gray;
+}
+.hijo2{
+	flex: 0 0 65%;	
+	border: 1px solid gray;
+}
+.hijo3{
+	flex: 0 0 15%;	
+	border: 1px solid gray;
+}

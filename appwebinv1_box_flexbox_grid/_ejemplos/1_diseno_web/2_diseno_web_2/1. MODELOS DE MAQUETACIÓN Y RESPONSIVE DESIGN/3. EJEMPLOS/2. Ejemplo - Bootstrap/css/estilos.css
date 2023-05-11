@@ -1,0 +1,68 @@
+html, body{
+	height: 100%;
+}
+
+img{
+	/*max-width: 100%;*/
+}
+
+.card-img-top{
+	height: 230px;
+}
+.navbar{
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	top:0;
+}
+
+
+#cover{
+	background: #222 url('../img/night-sky-2284594.jpg') center center no-repeat;
+	background-size: cover;
+	color: #fff;
+	height: 105%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+#cover-texto{
+	width: 100%;	
+}
+
+#cover-texto .form-inline{
+	padding: 5rem 0;
+} 
+
+.contenido-seccion{
+	padding: 5rem 0;
+
+}
+
+.form-group input{
+	margin-right: 5px;	
+}
+
+#acerca-de{
+	background: url('../img/portrait-787522_1920.jpg') center center no-repeat;
+	height: 100%;
+	background-size: cover;
+}
+.texto-acerca-de{
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	padding: 1.875rem;
+}
+
+#noticias{
+	padding: 5rem 0;
+	
+}
+
+#footer{
+	background: #222;
+	color: #fff;
+	font-size: 0.8rem;
+	padding: 2.5rem 0; 	
+}

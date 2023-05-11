@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">	
+</head>
+<body>
+
+	<div class="container py-5 d-flex justify-content-center">
+		<!-- Botón que trae el modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			Ingresar
+		</button>
+		
+		<!-- Ventana Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<!-- Formulario -->
+						<form id="myForm" action="../app/views/admin/layout.html" method="get">
+							<div class="form-group">								
+								<input type="email" class="form-control" id="emailIngreso" aria-describedby="emailHelp" placeholder="Usuario: user@correo.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+							</div>
+							<div class="form-group">								
+								<input type="password" class="form-control" id="passIngreso" placeholder="password: Escriba entre 5 y 8 caracteres" required pattern="[A-Za-z0-9]{5,8}" title="Escriba entre 5 y 8 caracteres">
+							</div>
+							<div class="row px-3 pb-3 mb-3">
+								<div class="form-group form-check col-6 m-0">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">Recordar mis datos</label>
+								</div>
+								<a href="" class="col nav-link col-6 m-0 p-0 text-right">Olvidó su contraseña?</a>
+							</div>
+							<div class="text-center">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/scripts-pers.js"></script>
+</body>
+</html>

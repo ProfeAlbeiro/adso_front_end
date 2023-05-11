@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;	
+}
+
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+.titulo{
+	text-align: center;
+	padding: 15px;
+	font-size: 2em;
+	padding-top: 100px;
+	background: #F1F1F1;
+	color: #444;	
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/* Cuerpo */
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+
+/* Navegación */
+nav{
+	/*background: #0F5672;*/
+	width: 90%;
+	max-width: 1200px; 
+	/*margin:auto;*/
+	position: fixed !important; 
+	transition: all 0.3s ease;
+	z-index: 10;
+}
+.nav-color1{
+	background: rgba(15,86,114,0.5);	
+	padding: 15px 16px;	
+	transition: all 0.3s ease;
+}
+.nav-color2{
+	background: rgba(15,86,114,1);
+	padding: 0px 16px;	
+	transition: all 0.3s ease;
+}
+nav ul li a{
+	color: #fff;
+}
+.nav-pills > li > a.active{
+    background: #F2B134 !important;
+}
+nav ul li a:hover{
+	color: #ccc;
+}
+nav img{
+	width: auto;
+	height: 50px;
+	padding: 0 10px;
+	margin:0;
+}
+/* Encabezado */
+header{
+	width: auto;
+	height: 650px;
+	background-image: url('../img/fondo-header.jpg');
+	background-size: 100% 100%;
+}
+.opaco{
+	background: rgba(0,0,0,0.5);
+}
+
+/* formulario */
+form{
+	margin-top: 80px;
+}
+form textarea{
+	resize: none;
+}
+
+/* Secciones*/
+section{
+
+}
+
+/* Productos */
+.productos{
+
+}
+
+.productos .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 100px 20px 0px 20px;
+	overflow: hidden;
+	color:#fff;
+	top: 65px;	
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
+}
+.productos .img-info a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;	
+	border-radius: 50%;
+	background: #21c87a;
+	text-align: center;
+	color: #fff;	
+	padding: 5px;
+}
+
+.card:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+/* Quiénes somos */
+.quienes-somos{
+
+}
+
+/* Pie de página */
+footer{
+
+}
+footer p{
+	margin: 0;
+	font-size: 0.7em;
+}
+footer .fab{
+	font-size: 2.5em;
+	margin: 0 6px;
+}
+
+@media screen and (max-width: 991px) {	
+	.nav-color{
+		background: rgba(15,86,114,1);
+	}
+}

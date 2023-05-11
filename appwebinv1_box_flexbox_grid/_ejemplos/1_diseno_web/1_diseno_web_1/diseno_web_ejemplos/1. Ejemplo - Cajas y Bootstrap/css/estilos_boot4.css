@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Coiny|Krona+One');
+.container{
+	max-width: 1200px;
+	font-family: 'Oswald', sans-serif;
+}
+.columna{
+	border: 1px solid #666;
+}
+
+/*navegador*/
+nav{
+	background: #444;
+}
+nav a{
+	color: #fff;
+}
+nav a:hover{
+	color: #fff;
+}
+
+/*encabezado*/
+header{	
+	height: 715px;
+	background: #ccc;
+	background-image: url('../img/fondo_header.jpg');
+	background-size: auto 100%;
+	background-position: center;
+}
+
+/*títulos de la sección*/
+.tituloseccion{	
+	padding: 55px 0 15px 0;
+	text-align: center;
+	background: #00A199;
+	color: #fff;
+}
+
+/*portafolio*/
+main{	
+	height: 600px;
+	background: #fff;
+}
+
+/*quiénes somos y contáctenos*/
+section{	
+	height: 600px;
+	background: #fff;
+}
+
+/*quiénes somos*/
+.sec-color{	
+	background: #F2F2F2;	
+}
+.sec-color .row{
+	height: 33.33%;
+}
+
+/*contáctenos*/
+section .col-6 > .row{
+	height: 100%;
+}
+
+/*pie de página*/
+footer{
+	height: 70px;
+	background: #1F2B32;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}

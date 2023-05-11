@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<form class="form_contacto" action="" method="post">
+		<ul>
+			<li>
+				<h2>Contáctenos</h2>	
+				<span class="requerido"> (*) Campo Obligatorio</span>
+			</li>
+			<li>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre" placeholder="Albeiro">				
+			</li>
+			<li>
+				<label for="apellido">Apellido: </label>
+				<input type="text" name="apellido" placeholder="Ramos">
+			</li>
+			<li>
+				<label for="correo">Correo: </label>
+				<input type="text" name="correo" placeholder="albeiro_R.33@correo.com">
+			</li>
+			<li>
+				<label for="empresa">Empresa: </label>
+				<input type="text" name="empresa" placeholder="Nombre de la Empresa">
+			</li>
+			<li>
+				<label for="direccion">Dirección: </label>
+				<input type="text" name="direccion" placeholder="Cll, Cr, Tv, Dg ## N° ## - ##">
+			</li>
+			<li>
+				<label for="mensaje">Mensaje:</label>
+				<textarea name="mensaje" cols="40" rows="6" placeholder="Escriba aquí su comentario"></textarea>
+			</li>
+			<li>
+				<button class="enviar" type="submit">Enviar</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

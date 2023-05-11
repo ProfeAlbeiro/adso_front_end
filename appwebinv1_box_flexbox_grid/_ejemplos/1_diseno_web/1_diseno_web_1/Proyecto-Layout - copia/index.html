@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página Principal - Empresa - LandingPage</title>
+	<link rel="shortcut icon" href="img/logo-emp.png">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<!-- Ventana Modal -->
+	<div id="modal" class="modal">
+		<div class="modal-contenedor">
+			<div class="modal-header">Inicio de Sesión</div>
+			<a href="#" class="modal-cerrar">X</a>
+			<div class="modal-contenido">
+				<form action="" method="get" id="myForm">					
+					<div class="form-cuerpo">						
+						<div>
+							<label for="user">User</label>
+							<input name="user" id="user" type="email" placeholder="user" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+						</div>
+						<div>
+							<label for="password">Password</label>
+							<input name="pass" id="pass" type="password" pattern="[A-Za-z0-9]{5,8}" placeholder="Escriba entre 5 y 8 caracteres" required>
+						</div>						
+					</div>
+					<div class="form-pie">
+						<input type="reset" value="Cancelar" onclick="cancelar();">
+						<input type="submit" value="Enviar">
+					</div>
+				</form>
+			</div>			
+		</div>
+	</div>
+
+	<div class="contenedor">
+		<!-- Navegador -->
+		<nav>
+			<div class="logo">
+				<img src="img/logo-emp.png" alt="Logo Empresa" title="Título Logo Empresa">
+			</div>
+			<div class="navega">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#portafolio">Portafolio</a>
+						<ul>
+							<li><a href="">Productos</a>
+								<ul>
+									<li><a href="">Producto 1</a></li>
+									<li><a href="">Producto 2</a></li>
+									<li><a href="">Producto 3</a></li>
+								</ul>
+							</li>
+							<li><a href="">Servicios</a>
+								<ul>
+									<li><a href="">Servicio 1</a></li>
+									<li><a href="">Servicio 2</a></li>
+									<li><a href="">Servicio 3</a>
+										<ul>
+											<li><a href="">Servicio 3.1</a></li>
+											<li><a href="">Servicio 3.2</a></li>
+											<li><a href="">Servicio 3.3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#contactenos">Contáctenos</a></li>
+				</ul>
+			</div>
+			<div class="ingreso">
+				<ul>
+					<li><a href="">Ingreso</a>
+						<ul>
+							<li><a href="">Registro</a></li>
+							<li><a href="#modal">Iniciar Sesión</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Encabezado -->
+		<header>
+			<div class="head-opc">
+				<h1>Bienvenidos</h1>
+				<h2>A la Empresa más Importante</h2>
+			</div>
+		</header>
+
+		<!-- Portafolio -->
+		<div id="portafolio" class="titulo">
+			<h1>Portafolio</h1>
+		</div>
+		<section class="portafolio">
+			<div class="col-port ancho">
+				<h2>Subtítulo</h2>
+				<img src="img/header.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui laborum dolor, iure nisi perferendis officiis voluptate. Maiores nesciunt ratione maxime deserunt culpa similique vel minima dolore reiciendis voluptatem aperiam veniam fugiat, adipisci accusantium esse odio velit provident delectus facere. Illum accusamus fuga cupiditate in blanditiis praesentium deserunt debitis, unde!</p>				
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quibusdam cum, impedit. Aut eaque vero aliquid nesciunt, dolores dignissimos asperiores.</p>
+			</div>
+			<div class="col-port">
+				<h2>Subtítulo</h2>
+				<img src="img/header.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui laborum dolor, iure nisi perferendis officiis voluptate. Maiores nesciunt ratione maxime deserunt culpa similique vel minima dolore reiciendis voluptatem aperiam veniam fugiat, adipisci accusantium esse odio velit provident delectus facere. Illum accusamus fuga cupiditate in blanditiis praesentium deserunt debitis, unde!</p>				
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quibusdam cum, impedit. Aut eaque vero aliquid nesciunt, dolores dignissimos asperiores.</p>
+			</div>
+			<div class="col-port">
+				<h2>Subtítulo</h2>
+				<img src="img/header.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui laborum dolor, iure nisi perferendis officiis voluptate. Maiores nesciunt ratione maxime deserunt culpa similique vel minima dolore reiciendis voluptatem aperiam veniam fugiat, adipisci accusantium esse odio velit provident delectus facere. Illum accusamus fuga cupiditate in blanditiis praesentium deserunt debitis, unde!</p>				
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quibusdam cum, impedit. Aut eaque vero aliquid nesciunt, dolores dignissimos asperiores.</p>
+			</div>
+		</section>
+
+		<!-- Nosotros -->
+		<div id="nosotros" class="titulo">
+			<h1>Nosotros</h1>
+		</div>
+		<section class="nosotros">
+			<div class="fila-nos">
+				<div class="col-izq-nos">
+					<h2>Subtitulo</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit blanditiis minus tempore sed nobis, a iure, voluptas praesentium delectus voluptatibus ullam cum perspiciatis modi in accusantium beatae aperiam accusamus minima omnis ex unde dolor, cupiditate? Enim vero reprehenderit, nulla eveniet obcaecati? Accusamus, suscipit doloribus, at ratione quasi saepe deserunt reprehenderit.</p>
+				</div>
+				<div class="col-cnt-nos">
+					<img src="img/fondo.jpg" alt="">
+				</div>
+				<div class="col-der-nos none none-tab"></div>
+			</div>
+			<div class="fila-nos none">
+				<div class="col-izq-nos none-tab"></div>
+				<div class="col-cnt-nos">
+					<img src="img/fondo.jpg" alt="">
+				</div>
+				<div class="col-der-nos">
+					<h2>Subtitulo</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit blanditiis minus tempore sed nobis, a iure, voluptas praesentium delectus voluptatibus ullam cum perspiciatis modi in accusantium beatae aperiam accusamus minima omnis ex unde dolor, cupiditate? Enim vero reprehenderit, nulla eveniet obcaecati? Accusamus, suscipit doloribus, at ratione quasi saepe deserunt reprehenderit.</p>
+				</div>
+			</div>
+			<div class="fila-nos">
+				<div class="col-izq-nos">
+					<h2>Subtitulo</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit blanditiis minus tempore sed nobis, a iure, voluptas praesentium delectus voluptatibus ullam cum perspiciatis modi in accusantium beatae aperiam accusamus minima omnis ex unde dolor, cupiditate? Enim vero reprehenderit, nulla eveniet obcaecati? Accusamus, suscipit doloribus, at ratione quasi saepe deserunt reprehenderit.</p>
+				</div>
+				<div class="col-cnt-nos">
+					<img src="img/fondo.jpg" alt="">
+				</div>
+				<div class="col-der-nos none none-tab"></div>
+			</div>			
+		</section>
+
+		<!-- Contáctenos -->
+		<div id="contactenos" class="titulo">
+			<h1>Contáctenos</h1>
+		</div>
+		<section class="contactenos">
+			<div class="col-conts">
+				<form action="" method="">
+					<div class="form-enc">
+						<h1>Contacta con Nosotros</h1>
+					</div>
+					<div class="form-cuerpo">
+						<div>
+							<label for="nombre">Nombre</label>
+							<input name="nombre" id="nombre" type="text" placeholder="Nombres">
+							<label for="apellido">Apellido</label>
+							<input name="apellido" id="apellido" type="text" placeholder="Apellidos">
+						</div>
+						<div>
+							<label for="correo">Correo</label>
+							<input name="correo" id="correo" type="email" placeholder="correo">
+						</div>
+						<div>
+							<label for="asunto">Asunto</label>
+							<input name="asunto" id="asunto" type="text" placeholder="Asunto">
+						</div>
+						<div>
+							<label class="alinear-arr" for="mensaje">Mensaje</label>
+							<textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+						</div>
+					</div>
+					<div class="form-pie">
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Enviar" onclick="datos_env();">
+					</div>
+				</form>
+			</div>
+			<div class="col-conts">
+				<div class="col-arr-conts">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9906447383087!2d-74.11388868466015!3d4.595697996661291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992578cd5a53%3A0x58a99ef964806d14!2sServicio%20Nacional%20De%20Aprendizaje%20Sena%20Centro%20De%20Electricidad%20Electr%C3%B3nica%20Telecomunicaciones!5e0!3m2!1ses!2sco!4v1599612108596!5m2!1ses!2sco" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div class="col-abj-conts">
+					<div class="fila-col-abj-cont">
+						<p>Dirección:</p>
+						<p>Teléfono:</p>
+						<p>WhatsApp:</p>
+						<p>Bogotá D.C.</p>
+					</div>
+					<div class="fila-col-abj-cont">
+						<div class="fila-col-abj-cont-col"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></a></i></div>
+						<div class="fila-col-abj-cont-col"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></a></i></div>
+						<div class="fila-col-abj-cont-col"><a href="https://myaccount.google.com/profile" target="_blank"><i class="fab fa-google-plus-square"></i></a></div>
+						<div class="fila-col-abj-cont-col"><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></a></i></div>
+						<div class="fila-col-abj-cont-col"><a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="fas fa-share-alt-square"></a></i></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pie de Página -->
+		<footer>
+			<p>Todos los derechos reservados a</p>
+			<p>Albeiro Ramos © CopyRight 2020</p>
+		</footer>
+		<a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+	</div>
+	<script src="js/scripts.js"></script>	
+</body>
+</html>

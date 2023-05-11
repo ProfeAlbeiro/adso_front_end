@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+.borde{
+	border: 1px solid #aaa;
+}
+
+/* título de sección*/
+.titulo{
+	padding-top: 50px;
+	text-align: center;
+}
+
+/* contenedor */
+.contenedor{
+	width: 95%;	
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/* navegador */
+nav{
+	height: 50px;
+	display: flex;
+	flex-flow: row wrap;	
+}
+.logo{
+	flex: 20%;
+}
+.navega{
+	flex: 65%;
+}
+.ingreso{
+	flex: 15%;	
+}
+
+/* encabezado */
+header{
+	height: 550px;
+}
+
+/* portafolio */
+main{
+	height: 550px;
+	display: flex;
+	flex-flow: row wrap;
+}
+main > div{
+	flex: 0%;
+}
+
+/* secciones */
+section{
+	height: 550px;
+}
+
+/* quienes somos */
+.quienes-somos{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.quienes-somos > div{
+	flex: 0%;
+	display: flex;
+}
+.quienes-somos .col-izq, .quienes-somos .col-der{
+	flex: 40%;
+}
+.quienes-somos .col-cnt{
+	flex: 20%;
+}
+
+/* contáctenos*/
+.contactenos{
+	display: flex;
+}
+
+.contactenos > div{
+	flex: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.contactenos div div{
+	flex: 0%;
+}
+/* pie de página */
+footer{
+	height: 50px;
+}
+
+

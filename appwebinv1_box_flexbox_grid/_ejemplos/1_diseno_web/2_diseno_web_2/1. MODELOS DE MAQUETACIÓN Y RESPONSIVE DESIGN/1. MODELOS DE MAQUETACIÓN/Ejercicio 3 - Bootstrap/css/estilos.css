@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.titulo{
+	padding-top: 50px;
+}
+nav{
+	height: 50px;
+}
+header, main, section{
+	height: 550px;	
+}
+.quienes-somos > .col{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.quienes-somos .row{ 
+	flex: 0%;
+}
+.contactenos .col .row{
+	height: 100%;
+}
+footer{
+	height: 70px;
+}

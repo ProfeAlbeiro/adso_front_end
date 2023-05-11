@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+
+nav{
+	height: 50px;
+}
+
+section{
+	height: 500px;
+}
+
+aside{
+	height: 500px;
+}
+
+main{
+	height: 500px;
+}
+
+footer{
+	height: 80px;
+}

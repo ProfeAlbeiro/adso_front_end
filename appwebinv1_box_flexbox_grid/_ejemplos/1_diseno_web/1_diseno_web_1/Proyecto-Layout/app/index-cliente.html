@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cliente</title>
+	<link rel="shortcut icon" href="img/logo-sistema.png">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="css/estilos-panel.css">
+	<link rel="stylesheet" href="css/estilos-cliente.css">	
+</head>
+<body>
+	<div class="contenedor">
+		<!-- Navegador -->
+		<nav>
+			<div class="borde logo">
+				<img src="img/logo-sistema.png" alt="Logo Empresa" title="Título Logo Empresa">
+			</div>
+			<div class="navega-izq"></div>
+			<div class="navega-der">
+				<ul>
+					<li title="Principal"><a href="modules/componentes/admin-principal.html" target="area-trabajo"><i class="fas fa-home"></i></a></li>
+					<li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+					<li><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li><a href="#"><i class="fas fa-list-ol"></i></a></li>
+				</ul>
+			</div>
+			<div class="ingreso">
+				<ul>
+					<li><a href="#">Cliente</a>
+						<ul>
+							<li><a href="">Configuración</a></li>
+							<li><a href="../index.html">Cerrar Sesión</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Sección Principal -->
+		<section>
+			<input type="checkbox" class="checkbox" id="check">
+			<label for="check" class="menu"><i class="fas fa-bars"></i></label>
+			<!-- Panel Lateral -->
+			<aside>
+				<div class="mod-conf">
+					<div class="mod-conf-col-izq">
+						<i class="fas fa-user-tie"></i>
+					</div>
+					<div class="mod-conf-col-der">
+						<ul>
+							<li>Nombre Completo</li>
+							<li>Administrador</li>
+							<li><a href="">Configuración</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="modulo">
+					<h3>Mód: Gestión Usuarios</h3>					
+					<h4>Registrar Usuario</h4>
+					<ul>
+						<li><a href="modules/1_usuarios/crear-usuario.html" target="area-trabajo">Crear Usuario</a></li>
+						<li><a href="modules/1_usuarios/consultar-usuarios.html" target="area-trabajo">Consultar Usuarios</a></li>
+						<li><a href="#">Reporte Usuarios<i class="fas fa-chevron-right"></i></a>
+							<ul>
+								<li><a href="modules/1_usuarios/reporte-impreso.html" target="area-trabajo">Reporte Doc</a></li>
+								<li><a href="modules/1_usuarios/reporte-grafico.html" target="area-trabajo">Reporte Gráfico</a></li>
+							</ul>							
+						</li>
+					</ul>
+				</div>
+				<div class="modulo">
+					<h3>Mód: Gestión Principal S.I.</h3>
+					<h4>Subtítulo Principal</h4>
+					<ul>
+						<li><a href="">Crear</a></li>
+						<li><a href="">Consultar</a></li>
+						<li><a href="">Reporte</a></li>
+					</ul>
+				</div>
+				<div class="modulo">
+					<h3>Mód: Gestión S.I.</h3>
+					<h4>Subtítulo</h4>
+					<ul>
+						<li><a href="">Crear</a></li>
+						<li><a href="">Consultar</a></li>
+						<li><a href="">Reporte</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<!-- Área de Trabajo -->
+			<main>
+				<iframe name="area-trabajo" src="modules/componentes/admin-principal.html"></iframe>
+			</main>
+		</section>
+
+		<!-- Pie de Página -->
+		<footer>
+			<p>Todos los derechos reservados a</p>
+			<p>Albeiro Ramos © CopyRight 2020</p>
+		</footer>		
+	</div>
+</body>
+</html>

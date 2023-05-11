@@ -1,0 +1,232 @@
+/* Estilo de Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Todo el documento */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+p{
+	text-align: justify;
+	padding-bottom: 15px;
+}
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+.titulo{
+	width: 100%;
+	/*height: 50px;*/
+	padding-top: 60px;
+	padding-bottom: 10px;
+	text-align: center;
+	background: #AF442A;	
+}
+.aln-der{
+	text-align: right;
+}
+/* Html */
+html{
+	scroll-behavior: smooth;
+}
+/* Contenedor */
+.contenedor{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+/* Navegador */
+nav{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	height: 50px;
+	background: #ddd;
+	position: fixed;	
+}
+nav ul{
+	list-style: none;
+	padding-right: 5px;	
+}
+nav ul li{
+	display: inline-block;
+	width: 120px;
+}
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 14px 10px 15px 10px;
+	border-bottom: 3px solid #ccc;
+	text-align: center;
+	color: #fff;
+}
+nav ul li a:hover{
+	background: #333;	
+	border-bottom: 3px solid #AF442A;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	background: #ccc;
+	padding: 5px;
+	text-align: center;
+	float: left;
+}
+.logo img{
+	height: 100%;
+}
+.navega{
+	width: 65%;
+	height: 100%;
+	text-align: right;
+	background: #2A4DAF;
+	float: left;
+}
+.ingreso{
+	width: 15%;
+	height: 100%;
+	background: #4DC2E2;	
+	float: left;
+}
+.ingreso ul{
+	padding-right: 0;
+}
+.ingreso li{
+	width: 100%;
+}
+/* Encabezado */
+header{
+	width: 100%;
+	height: 700px;
+	padding-top: 60px;
+	background-image: url('../img/header.jpg');
+	background-size: 100% 100%;
+	/*background-attachment: fixed;*/
+}
+/* Secciones: Portafolio, Nosotros y
+Contáctenos */
+section{
+	width: 100%;
+	height: 600px;		
+}
+/* Portafoliio */
+.port-col{
+	width: 33.33%;
+	height: 100%;
+	padding: 15px;
+	text-align: center;
+	float: left;
+}
+.port-col h2{
+	padding-bottom: 15px;
+}
+.port-col img{	
+	width: 60%;
+	height: auto;
+	text-align: center;	
+	margin-bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid #aaa;
+}
+.port-col a{
+	display: block;
+	text-align: left;
+}
+/* Nosotros */
+.nos-fila{
+	width: 100%;
+	height: 33.33%;
+}
+.nos-col-ext{
+	width: 40%;
+	height: 100%;
+	padding: 45px 15px 15px 15px;
+	float: left;
+}
+.nos-col-ext h2{
+	padding-bottom: 15px;
+}
+.nos-col-cnt{
+	width: 20%;
+	height: 100%;
+	padding: 25px;
+	text-align: center;
+	float: left;
+}
+.nos-col-cnt img{
+	width: 150px;	
+	height: 150px;
+	border-radius: 50%;
+}
+/* Contáctenos */
+.cont-col{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.cont-fila-arr{
+	width: 100%;
+	height: 65%;
+}
+.cont-fila-abj{
+	width: 100%;
+	height: 35%;
+}
+/* Pie de Página */
+footer{
+	width: 100%;
+	height: 50px;
+	background: #888;
+	color: #eee;		
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+	/* Navegador */
+	nav{		
+		height: 100px;			
+	}
+	nav ul li{		
+		width: 25%;
+		padding-left: 5px;
+		float: left;
+	}
+	nav ul li a{		
+		padding: 14px 0px 15px 0px;		
+	}
+	.logo{
+		width: 100%;
+		height: 50%;				
+	}
+	.navega{
+		width: 80%;
+		height: 50%;
+		text-align: center;		
+	}
+	.ingreso{
+		width: 20%;
+		height: 50%;		
+	}	
+}
+
+/* Celular */
+@media only screen and (max-width: 576px) {
+	/* Navegador */
+	nav{		
+		height: 150px;			
+	}
+	.logo{
+		width: 100%;
+		height: 50px;				
+	}
+	.navega{
+		width: 100%;
+		height: 50px;	
+	}
+	.ingreso{
+		width: 100%;
+		height: 50px;
+		padding-right: 5px;		
+	}	
+}

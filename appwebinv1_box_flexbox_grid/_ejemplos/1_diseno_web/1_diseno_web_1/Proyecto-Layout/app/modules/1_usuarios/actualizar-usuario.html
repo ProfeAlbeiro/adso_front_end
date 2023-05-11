@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Actualizar Usuario</title>
+	<link rel="stylesheet" href="../../css/estilos-paginas.css">
+</head>
+<body>
+	<div class="contenedor">
+		<!-- Sección Fija -->
+		<div class="fija">
+			<!-- Migas de Pan -->
+			<div class="migas-pan">
+				<a href="../componentes/admin-principal.html">Principal</a> / Gestión de Usuarios / Actualizar Usuario  
+			</div>
+			<!-- Título -->
+			<div class="titulo">
+				<h1>Actualizar Usuario</h1>
+			</div>
+			<div class="controles">
+				<a href="" id="control-azul">Consultar</a>
+			</div>			
+		</div>
+		<!-- Contenido -->
+		<div class="cuerpo-pag">
+			<form action="consultar-usuarios.html" method="get">			
+				<fieldset>
+					<legend>Datos Usuario</legend>
+					<div class="form-cuerpo">
+						<div>
+							<label for="nombre">Nombres</label>
+							<input name="nombre" id="nombre" type="text" placeholder="Nombres">
+							<label for="apellido">Apellidos</label>
+							<input name="apellido" id="apellido" type="text" placeholder="Apellidos">
+						</div>
+						<div>
+							<label for="documento">Documento</label>
+							<input name="documento" id="documento" type="number" placeholder="Documento">
+						</div>
+						<div>
+							<label for="correo">Correo</label>
+							<input name="correo" id="correo" type="email" placeholder="correo">
+						</div>
+						<div>
+							<label for="perfil">Perfil</label>
+							<select id="perfil" name="perfil">
+								<option value="cliente">Cliente</option>
+								<option value="proveedor">Proveedor</option>
+								<option value="admin">Administrador</option>
+							</select>
+							<label for="estado">Estado</label>
+							<select id="estado" name="estado">
+								<option value="activo">Activo</option>
+								<option value="inactivo">Inactivo</option>
+							</select>
+						</div>
+						<div>
+							<label for="user">User</label>
+							<input name="user" id="user" type="text" placeholder="user">
+						</div>
+						<div>
+							<label for="pass">Password</label>
+							<input name="pass" id="pass" type="password" placeholder="password">
+						</div>
+					</div>
+					<div class="form-pie">
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Actualizar" onclick="actualizar_usuario();">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<script src="../../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+			/* Escritorio, portatil */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+.titulo{	
+	height: 50px;
+}
+/* Contenedor */
+.contenedor{
+	width: 90%;	
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-flow: column wrap;	
+}
+/* Navegador */
+nav{	
+	height: 50px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.logo{
+	flex: 20%;
+}
+.navega{
+	flex: 65%;	
+}
+.ingreso{
+	flex: 15%;	
+}
+/* Encabezado */
+header{	
+	height: 600px;	
+}
+/* Secciones */
+section{
+	height: 600px;
+	display: flex;
+}
+/* Portafolio */
+.portafolio{	
+	/*height: auto;	*/
+	flex-flow: row wrap;
+}
+.col-port-izq, .col-port-cnt, .col-port-der{
+	/*min-height: 600px;*/
+	flex: 1;
+	overflow: hidden;
+}
+/* Nosotros */
+.nosotros{
+	/*height: auto;*/
+	flex-flow: column wrap;
+}
+.fila-nos-arb, .fila-nos-cnt, .fila-nos-abj{
+	/*min-height: 200px;*/
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	/*overflow: hidden;		*/
+}
+.col-nos-izq, .col-nos-der{	
+	flex: 40%;	
+}
+.col-nos-cnt{
+	flex: 20%;	
+}
+/* Contáctenos */
+.contactenos{
+	flex-flow: row wrap;
+}
+.col-cont-izq, .col-cont-der{
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;
+}
+.fila-arb-cont{
+	flex: 65%;	
+}
+.fila-abj-cont{
+	flex: 35%;	
+}
+/* Pie de página */
+footer{	
+	height: 70px;
+}
+				/* Tablet */
+@media only screen and (max-width: 992px) {
+	/* Navegador */	
+	nav{	
+		height: 100px;
+	}	
+	.logo{		
+		flex: 20%;
+	}
+	.navega{		
+		flex: 80%;		
+	}
+	.ingreso{		
+		flex: 100%;		
+	}
+	/* Portafolio */		
+	.col-port-izq{
+		flex: 100%;
+	}
+	.col-port-cnt, .col-port-der{
+		flex: 50%;
+	}
+	/* Nosotros */	
+	.fila-nos-arb .col-nos-der,
+	.fila-nos-cnt .col-nos-izq,
+	.fila-nos-abj .col-nos-der{
+		display: none;
+	}
+	/* Contáctenos */
+	.contactenos{
+		height: 1200px;
+	}	
+	.col-cont-izq, .col-cont-der{
+		flex: 100%;
+	}	
+}
+				/* Celular */
+@media only screen and (max-width: 576px) {
+	/* Navegador */
+	nav{	
+		height: 150px;
+	}
+	.logo, .navega, .ingreso{
+		flex: 100%;
+	}	
+	/* Portafolio */		
+	.col-port-izq, .col-port-cnt, .col-port-der{
+		flex: 100%;
+	}
+	/* Nosotros */
+	.nosotros{
+		height: 1200px;
+	}
+	.col-nos-izq, .col-nos-der{
+		flex: 100%;
+		order: 2;
+	}
+	.col-nos-cnt{		
+		flex: 100%;
+		order: 1;
+	}
+}

@@ -1,0 +1,11 @@
+#espacio{
+	width: 560px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+#favcolor{
+	display: block;
+	margin: 0 auto;
+}

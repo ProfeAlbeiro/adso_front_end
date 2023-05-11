@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consultar Usuario</title>
+	<link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../css/estilos-paginas.css">
+</head>
+<body>
+	<div class="contenedor">
+		<!-- Sección Fija -->
+		<div class="fija">
+			<!-- Migas de Pan -->
+			<div class="migas-pan">
+				<a href="../componentes/admin-principal.html">Principal</a> / Gestión de Usuarios / Consultar Usuario  
+			</div>
+			<!-- Título -->
+			<div class="titulo">
+				<h1>Consultar Usuario</h1>
+			</div>
+			<div class="controles">
+				<a href="crear-usuario.html" id="control-azul">Crear</a>
+				<a href="" id="control-gris" onclick="imprimir();">Imprimir</a>
+			</div>			
+		</div>
+		<!-- Contenido -->
+		<div class="cuerpo-pag">
+			<table>
+				<tr>
+					<th>Id</th>
+					<th>Nombres</th>
+					<th>Apellidos</th>
+					<th>Documento</th>
+					<th>Correo</th>
+					<th>Perfil</th>
+					<th>Estado</th>
+					<th>UserName</th>
+					<th>PassWord</th>
+					<th>Acciones</th>
+				</tr>
+				<tr>
+					<td>ABC123</td>
+					<td>Albeiro</td>
+					<td>Ramos</td>
+					<td>1011121314</td>
+					<td>admin@correo.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminRamos</td>
+					<td>12345</td>
+					<td>
+						<a href="../1_usuarios/actualizar-usuario.html"><i class="fas fa-edit"></i></a>
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>			
+					</td>
+				</tr>
+				<tr>
+					<td>DEF456</td>
+					<td>Pepito</td>
+					<td>Perez</td>
+					<td>1245782356</td>
+					<td>pepito@correo.com</td>
+					<td>Cliente</td>
+					<td>Inactivo</td>
+					<td>ClientePepito</td>
+					<td>56789</td>
+					<td>
+						<a href="../1_usuarios/actualizar-usuario.html"><i class="fas fa-edit"></i></a>
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>			
+					</td>
+				</tr>
+				<tr>
+					<td>ABC123</td>
+					<td>Albeiro</td>
+					<td>Ramos</td>
+					<td>1011121314</td>
+					<td>admin@correo.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminRamos</td>
+					<td>12345</td>
+					<td>
+						<a href="../1_usuarios/actualizar-usuario.html"><i class="fas fa-edit"></i></a>
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>			
+					</td>
+				</tr>
+				<tr>
+					<td>ABC123</td>
+					<td>Albeiro</td>
+					<td>Ramos</td>
+					<td>1011121314</td>
+					<td>admin@correo.com</td>
+					<td>Admin</td>
+					<td>Activo</td>
+					<td>AdminRamos</td>
+					<td>12345</td>
+					<td>
+						<a href="../1_usuarios/actualizar-usuario.html"><i class="fas fa-edit"></i></a>
+						<a href="#" onclick="eliminar_usuario();"><i class="fas fa-trash-alt"></i></a>			
+					</td>
+				</tr>			
+			</table>
+		</div>
+	</div>
+	<script src="../../js/sweetalert.min.js"></script>
+	<script src="../../js/scripts.js"></script>
+</body>
+</html>

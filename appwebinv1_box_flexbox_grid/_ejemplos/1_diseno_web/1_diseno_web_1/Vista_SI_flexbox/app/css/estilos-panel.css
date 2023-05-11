@@ -1,0 +1,177 @@
+/* Escritorio - Portatil */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;	
+}
+/* Clases especiales */
+.borde{
+	border: 1px solid gray;
+}
+/* Contendor */
+.contenedor{
+	width: 95%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 8px;
+}
+/* Navegador */
+nav{
+	height: 50px;
+	background: #333;
+	display: flex;
+	flex-flow: row wrap;	
+}
+.logo{
+	flex: 25%;
+	background: #aaa;
+}
+.navega{
+	flex: 60%;
+}
+.salir{
+	flex: 15%;
+	background: #666;	
+}
+/* Sección Principal */
+section{
+	height: 83vh;
+	display: flex;
+	flex-flow: row wrap;
+}
+/* Botón de Menú */
+#btn-menu-lateral{
+	position: absolute;
+	font-size: 2em;
+	top: 9px;
+	left: 29.5%;
+	color: #fff;
+	cursor: pointer;
+}
+.activar-panel{
+	width: 0;
+	transition: all 500ms linear;
+}
+
+/* Panel Lateral */
+aside{
+	width: 25%;
+	background: #d2d2d2;
+	transition: all 500ms linear; 	
+}
+.mod-conf{
+	height: 16vh;
+	overflow: hidden;
+	border-bottom: 1px solid gray;
+}
+.modulos{
+	height: 66.5vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.modulo{
+	min-height: 33.33%;
+	border-top: 1px solid gray; 	
+}
+.modulo h1, .mod-conf h1{
+ 	text-align: center;
+ 	padding: 5px;
+ 	white-space: nowrap;
+ }
+/* Área de Trabajo */
+main{
+	flex: 1;
+	height: 83vh;	
+	overflow-y: scroll;
+	overflow-x: hidden; 	
+}
+/* Pie de Página */
+footer{	
+	height: 70px;
+	background: #aaa;
+	display: flex;
+	flex-flow: row wrap;
+}
+.pie-izq{
+	flex: 25%;
+	background: #333; 	
+}
+.pie-der{
+	flex: 75%;
+}
+/* Tablet */
+@media only screen and (max-width: 992px) {
+	/* Navegador */
+	nav{
+		height: 100px; 		
+	}
+	.logo{
+		flex: 25%;
+	}
+	.navega{
+		flex: 75%;
+	}
+	.salir{
+		flex: 1;	
+	}
+	/* Sección Principal */
+ 	section{
+ 		height: 76.4vh; 		
+ 		flex-flow: column wrap;
+ 	}
+ 	.activar-panel{
+ 		width: 100%;
+ 		height: 0; 		
+ 	}
+ 	/* Panel Lateral */
+ 	aside{
+ 		width: 100%;
+ 		height: 50px;
+ 		display: flex;
+ 		flex-flow: row wrap; 		
+ 	}
+ 	.mod-conf{
+ 		flex: 25%;
+ 		height: 100%;
+ 		overflow: hidden; 		
+ 	}
+ 	.modulos{
+ 		flex: 75%;
+ 		height: 100%; 		
+ 		min-height: 100%; 		
+ 	}
+ 	.modulo{
+ 		width: 33.33%;
+ 		height: 100%;
+ 		border: 1px solid gray;
+ 		float: left;
+ 	}
+ 	.modulo h1, .mod-conf h1{ 		
+ 		font-size: 0.9em;
+ 		padding: 15px 0;
+ 		height: 100%;
+ 		cursor: pointer; 		
+ 		white-space: normal;		
+ 	}
+ 	#mod-cuerpo-0, #mod-cuerpo-1, #mod-cuerpo-2, #mod-cuerpo-3{
+ 		position: absolute;
+ 		z-index: 10;
+ 		width: 23.5%;
+ 		/*height: 300px;*/
+ 		padding: 0 20px; 		
+ 		overflow: hidden; 		
+ 		transition: all 500ms linear; 		
+ 		background: #f2f2f2;
+ 		white-space: normal;
+ 	}
+ 	.activar-mod-cuerpo-0, .activar-mod-cuerpo-1, .activar-mod-cuerpo-2, .activar-mod-cuerpo-3{ 		
+ 		height: 0!important;
+ 		transition: all 500ms linear;
+ 	}
+ 	/* Área de Trabajo */
+ 	main{ 		
+ 		height: 76.4vh; 		
+ 	}
+}
+
+

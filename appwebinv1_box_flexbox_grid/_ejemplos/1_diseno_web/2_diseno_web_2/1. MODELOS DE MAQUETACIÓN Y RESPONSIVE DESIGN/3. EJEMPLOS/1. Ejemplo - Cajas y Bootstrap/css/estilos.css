@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Coiny|Krona+One');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url('../img/fondo_body.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.contenedor{
+	width: 95%;
+	max-width: 1200px;
+	font-family: 'Oswald', sans-serif;
+	margin:auto;
+}
+nav{
+	width: 95%;
+	max-width: 1200px;
+	height: 50px;
+	background: #444;
+	position: fixed;
+	margin: auto;
+}
+nav .logo{
+	width: 20%;
+	height: 100%;
+	background: #5C7678;
+	text-align: center;
+	float: left;
+}
+.logo img{
+	height: 90%;
+}
+nav .navega{
+	width: 65%;
+	height: 100%;
+	background: #1F2B32;
+	text-align: center;
+	float: left;
+}
+nav ul{
+	list-style: none;	
+}
+nav ul li{
+	display: inline-block;	
+	width: 20%;
+}
+nav ul li a{
+	display: block;	
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+}
+nav ul li a:hover{
+	color: #FFFF00;
+	border-bottom: 2px solid #FFFF00;
+	background: rgba(255,255,255,0.2);	
+}
+nav .ingreso{
+	width: 15%;
+	height: 100%;
+	background: #283844;
+	text-align: center;
+	float: left;
+}
+.ingreso ul li{
+	width: 100%;
+	background: #283844;
+}
+.ingreso ul li ul{	
+	display: none;
+}
+.ingreso ul li ul a{
+	text-align: left;
+	padding: 10px;	
+}
+.ingreso ul li ul a i{
+	padding-right: 20px;
+}
+.ingreso ul li:hover ul{	
+	display: block;
+}
+header{
+	width: 100%;
+	height: 715px;
+	background: #ccc;
+	background-image: url('../img/fondo_header.jpg');
+	background-size: 100% 100%;
+}
+.opacidad{
+	width: 100%;
+	height: 100%;
+	padding-top: 350px;
+	font-family: 'Krona One', sans-serif;
+	font-family: 'Coiny', cursive;
+	font-family: 'Berkshire Swash', cursive;
+	background: rgba(0,0,0,0.5);	
+	color: #fff;
+	text-align: center;
+}
+header h1{
+	font-size: 6em;
+}
+header h2{
+	font-size: 3.5em;	
+}
+header a{
+	display: block;
+	width: 150px;
+	margin: auto;
+	margin-top: 45px;
+	padding: 15px 5px;
+	background: rgba(0,0,0,0.6);
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+header a i{
+	padding-right: 15px;
+}
+.tituloseccion{
+	width: 100%;
+	padding: 55px 0 15px 0;
+	text-align: center;
+	background: #00A199;
+	color: #fff;
+}
+main{
+	width: 100%;
+	height: 600px;
+	background: #fff;
+}
+.divMainIzq, .divMainCen, .divMainDer{
+	width: 33.33%;
+	height: 100%;
+	padding: 20px;
+	text-align: center;
+	overflow: hidden;	
+	float: left;
+}
+main h1{
+	text-align: center;
+	margin-bottom: 15px;
+}
+main p{	
+	text-align: justify;
+	font-size: 0.9em;
+	margin-top: 15px;
+}
+main img{	
+	width: 50%;
+	height: auto;
+	border-radius: 10px;	
+}
+section{
+	width: 100%;
+	height: 600px;
+	background: #fff;
+}
+section p{
+	font-size: 0.9em;
+	margin-top: 15px;	
+}
+section.sectionCol{	
+	background: #F2F2F2;	
+}
+.fila1, .fila2, .fila3{
+	width: 100%;
+	height: 33.33%;	
+}
+.columnaIzq, .columnaDer{
+	width: 40%;
+	height: 100%;
+	padding: 20px;
+	float: left;
+}
+.columnaIzq{
+	text-align: right;
+}
+.columnaCen{
+	width: 20%;
+	height: 100%;
+	padding: 30px 0 0 0;
+	text-align: center;
+	float: left;
+}
+.columnaCen img{
+	width: auto;
+	height: 80%;
+	border-radius: 50%;
+}
+section .divSecIz{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+section .divSecAr{
+	width: 50%;
+	height: 50%;
+	padding: 5px;
+	text-align: center;
+	float: left;	
+}
+.divSecAr img{
+	width: 100%;
+	height: 100%;
+}
+.divSecAb{
+	width: 50%;
+	height: 50%;
+	padding: 30px 0px;
+	background: #283844;
+	text-align: center;
+	color: #fff;
+	float: left;	
+}
+.disparrdivab{
+	margin-bottom: 30px;
+}
+.divSecAb ul{
+	list-style: none;
+}
+.divSecAb ul li{
+	display: inline-block;	
+	margin: 0px 15px;
+	width: 50px;
+}
+.divSecAb ul li a{
+	text-decoration: none;
+}
+.divSecAb ul li a i{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	padding: 10px 5px;
+	font-size: 2em;
+	color: #283844;
+	border-radius: 50%;
+}
+footer{
+	width: 100%;
+	height: 70px;
+	background: #1F2B32;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}
+.volver a{
+	position: fixed;
+    bottom: 20px;
+    right: 40px;
+    text-align: center;    
+    font-size: 3em;
+    color: rgba(0,0,0,0.7);
+}
+.volver a:hover{
+	color: rgba(0,0,0, 0.4);
+}

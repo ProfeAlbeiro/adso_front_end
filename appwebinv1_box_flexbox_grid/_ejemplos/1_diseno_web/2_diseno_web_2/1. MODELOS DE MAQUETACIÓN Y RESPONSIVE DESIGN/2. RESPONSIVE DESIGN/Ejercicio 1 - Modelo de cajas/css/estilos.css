@@ -1,0 +1,100 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+.borde{
+	border: 1px solid #aaa;
+}
+
+/* título de sección*/
+.titulo{
+	padding-top: 50px;
+	text-align: center;
+}
+
+/* contenedor */
+.contenedor{
+	width: 95%;
+	max-width: 1200px;
+	margin: auto;	
+}
+
+
+/* navegador */
+nav{
+	height: 50px;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.navega{
+	width: 65%;
+	height: 100%;
+	float: left;	
+}
+.ingreso{
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+
+/* encabezado */
+header{
+	height: 550px;
+}
+
+/* portafolio */
+main{
+	height: 550px;
+}
+
+main > div{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+
+/* secciones */
+section{
+	height: 550px;
+}
+
+/* quienes somos */
+.quienes-somos{
+
+}
+.quienes-somos > div{
+	height: 33.33%;
+}
+.quienes-somos .col-izq, .quienes-somos .col-der{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.quienes-somos .col-cnt{
+	width: 20%;
+	height: 100%;
+	float: left;	
+}
+
+/* contactenos */
+.contactenos{
+	
+}
+.contactenos > div{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.contactenos > div > div{
+	width: 100%;
+	height: 50%;
+}
+
+/* pie de página */
+footer{
+	height: 50px;
+}

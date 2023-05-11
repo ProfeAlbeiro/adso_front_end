@@ -1,0 +1,269 @@
+@media screen and (max-width: 732px) {
+	nav{
+		height: 100px;
+	}
+	nav ul li a{
+		border: none;
+	}
+	nav .logo{
+		width: 30%;		
+		border: 1px solid #444;
+		padding-top: 25px;
+	}
+	nav .logo img{
+		width: 60%;
+		height: auto;
+	}
+	nav .navega{
+		width: 70%;
+		height: 50%;		
+		font-size: 1.5em;
+	}
+	nav .navega a{
+		padding: 10px 0 0 0;
+	}	
+	nav .navega p{
+		display: none;
+	}
+	nav .ingreso{
+		width: 70%;
+		height: 50%;			
+		font-size: 1.2em;
+		text-align: justify;				
+	}
+	nav .ingreso ul{
+		height: 150px;
+	}
+	nav .ingreso a{
+		width: 100%;		
+		padding: 10px 0;
+		float: left;
+	}
+	nav .ingreso i, nav .ingreso p{
+		width: 55%;
+		float: left;
+	}
+	nav .ingreso i{
+		width: 45%;
+		padding: 7px 20px 0 0;		
+		text-align: right;		
+	}			
+	header{
+		height: 312px;
+	}
+	header .opacidad{
+		padding-top: 100px;
+	}
+	header h1, header h2{
+		font-size: 3.2em;
+	}
+	header a{
+		margin-top: 10px;
+	}
+	.tituloseccion{		
+		padding: 105px 0 15px 0;		
+	}
+	main {
+		height: 800px;
+	}
+	main .divMainIzq{
+		width: 50%;
+		padding-top: 100px;
+	}
+	main img{
+		width: 40%;
+		height: auto;
+	}
+	main .divMainCen{
+		width: 50%;
+		height: 50%;		
+	}
+	main .divMainDer{
+		width: 50%;
+		height: 50%;
+	}
+	main .divMainCen h1, main .divMainDer h1{
+		width: 100%;
+		padding-top: 5px;
+		font-size: 1.7em;
+		margin: 0;
+		text-align: left;		
+		float: left;
+	}	
+	main p{
+		font-size: 0.7em;
+	}
+	main .divMainCen img, main .divMainDer img{				
+		margin: 0 15px;		
+		float: right;
+	}
+	main .divMainCen p:first-child, main .divMainDer p:first-child{
+		margin-top: 250px;
+	}
+	section.sectionCol{
+		height: 600px;
+	}
+	.fila1, .fila2{
+		height: 50%;
+	}
+	.fila1 .columnaDer{
+		display: none;
+	}
+	.fila1 .columnaIzq, .fila1 .columnaCen{
+		width: 50%;
+		height: 100%;
+		margin: auto;
+	}
+	.fila2 .columnaIzq{
+		display: none;
+	}
+	.fila2 .columnaDer, .fila2 .columnaCen{
+		width: 50%;
+		height: 100%;
+		margin: auto;
+	}	
+	.columnaCen{
+		padding: 30px 20px; 
+	}	
+	.columnaCen img{
+		width: auto;
+		height: 65%;
+		border-radius: 50%;
+	}
+	.sectionCol .fila2{
+		height: 50%;
+	}
+	.sectionCol .fila3{
+		display: none;
+	}
+	section{
+		height: 400px;
+	}
+	section .divSecIz{
+		width: 100%;
+		height: 50%;
+	}
+	.divSecAb{
+		padding: 20px 10px;
+	}
+	.disparrdivab{
+		margin-bottom: 10px;
+	}
+	.divSecAb ul li{		
+		margin: 0 10px 0 ;
+		width: 30px;
+	}	
+	.divSecAb h3, .divSecAb a{
+		font-size: 0.7em;
+	}	
+	.divSecAb ul li a i{		
+		width: 30px;
+		height: 30px;		
+		background: #fff;
+		padding: 5px 0;
+	}
+}
+@media screen and (max-width: 412px) {
+	nav{	
+		height: 150px;
+		width: 100%;
+		position: relative;
+	}
+	nav .logo{
+		width: 100%;
+		height: 50px;
+		padding: 5px;
+	}
+	nav .logo img{
+		width: auto;		
+		height: 100%;
+	}
+	nav .navega{
+		width: 100%;
+		height: 50px;
+	}
+	nav .ingreso{
+		width: 100%;
+		height: 50px;
+	}
+	header{
+		height: 140px;
+	}
+	header a{
+		width: 100px;
+		margin: auto;
+		margin-top: 10px;
+		padding: 5px;		
+		font-size: 0.8em;		
+		border-radius: 5px;
+	}
+	header .opacidad{	
+		padding: 10px;		
+	}
+	header h1, header h2{
+		font-size: 1.5em;
+	}		
+	.tituloseccion{		
+		padding: 10px;		
+	}
+	main{
+		height: 450px;
+	}
+	main p{
+		font-size: 0.5em;
+	}	
+	main .divMainIzq{
+		width: 50%;
+		padding-top: 10px;
+	}
+	main img{
+		margin: 10px;
+		width: 30%;
+		float: left;
+	}
+	main .divMainIzq{
+		width: 100%;
+		height: 50%;
+	}
+	main .divMainCen{
+		width: 100%;
+	}
+	main .divMainDer{
+		display: none;
+	}
+	section.sectionCol{
+		height: 250px;
+		overflow: hidden;	
+	}
+	section.sectionCol .fila3{
+		display: none;
+	}
+	section.sectionCol .fila1{
+		height: 50%;
+	}
+	section.sectionCol .fila2{
+		display: none;
+	}
+	section.sectionCol .fila1 .columnaDer{
+		display: none;
+	}
+	section.sectionCol .fila1 .columnaIzq{
+		width: 60%;
+	}
+	section.sectionCol .fila1 .columnaCen{
+		padding: 80px 20px 0 0;
+		width: 40%;		
+	}
+	.fila1 .columnaCen img{
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	section .divSecIz{
+		width: 100%;
+		height: 100%;		
+	}
+	section .divSecAr, section .divSecAb{
+		display: none;
+	}
+}

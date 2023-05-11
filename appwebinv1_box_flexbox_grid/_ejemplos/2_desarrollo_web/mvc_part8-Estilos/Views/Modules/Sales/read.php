@@ -1,0 +1,1 @@
+<h2 class="text-center py-3">Consultar Ventas</h2>

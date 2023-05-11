@@ -1,0 +1,31 @@
+.titulo{
+	width: 100%;	
+	padding: 15px;
+	background: #f6f6f6;		
+	margin-top:15px;
+}
+
+.grupo-card{
+	background: #f6f6f6;
+	padding: 15px;
+}
+
+footer{
+	width: 100%;
+	padding: 15px;
+	background: #333;
+	color: #eee;
+	margin-top:15px;
+}
+
+form input:valid{
+	border: 1px solid #28A745;
+}
+
+form input:invalid{
+	border: 1px solid #DC3545;	
+}
+
+/*form input[type=email]{
+	font-size: 2em;
+}*/

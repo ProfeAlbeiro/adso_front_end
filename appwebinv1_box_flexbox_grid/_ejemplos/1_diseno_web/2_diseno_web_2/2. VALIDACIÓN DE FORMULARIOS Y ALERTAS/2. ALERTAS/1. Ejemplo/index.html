@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloFormulario.css">
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/dinamismo.js"></script>
+</head>
+<body>
+	<form class="Form_Contacto" action="docs/otro.html" method="post">
+		<ul>
+			<li>
+				<h2>Contáctenos</h2>
+				<span class="requerido">(*) Campo obligatorio</span>
+			</li>
+			<li>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre" placeholder="Albeiro" maxlength="30" required>
+			</li>
+			<li>
+				<label for="apellido">Apellido: </label>
+				<input type="text" name="apellido"  placeholder="Ramos" maxlength="140" required>
+			</li>	
+			<li>
+				<label for="correo">Correo: </label>
+				<input type="email" name="correo" placeholder="aramos43@micorreo.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" maxlength="50" required>
+				<span class="explicacion">Ejemplo: usuario@correo.com</span>
+			</li>
+			<li>
+				<label for="empresa">Empresa: </label>
+				<input type="text" name="empresa" placeholder="Nombre de la Empresa" maxlength="100" required>
+			</li>
+			<li>
+				<label for="direccion">Dirección: </label>
+				<input type="text" name="direccion" placeholder="Cr, Cl, Tv, Dg N° ## - ##" maxlength="100" required>
+			</li>
+			<li>
+				<label for="mensaje">Mensaje: </label>
+				<textarea name="" cols="40" rows="6" placeholder="Escriba aquí su comentario" maxlength="140"></textarea>
+			</li>
+			<li>
+				<button class="enviar" type="submit">Enviar</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

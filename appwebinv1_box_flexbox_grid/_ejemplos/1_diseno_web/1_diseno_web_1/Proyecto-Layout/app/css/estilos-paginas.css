@@ -1,0 +1,200 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Estilos Generales */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+.contenedor{
+	width: 95%;
+	height: 100vh;
+	max-width: 1280px;
+	margin: auto;
+	font-family: 'Roboto Condensed', sans-serif;	
+}
+.cuerpo-pag{
+	padding-top: 170px;
+}
+
+/* Clases Especiales */
+.borde{
+	border: 1px solid gray;
+}
+.fija{
+	position: fixed;
+	width: 95%;
+	padding: 20px 0 0 0;
+	background: #fff;
+	border-bottom: 1px solid #f2f2f2;	
+}
+
+/* Migas de Pan */
+.migas-pan{
+	width: 100%;
+	padding: 10px;
+	background: #f2f2f2;
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+}
+
+/* Título */
+.titulo{
+	width: 50%;
+	padding: 20px 0;	
+	float: left;
+}
+
+/* Controles */
+.controles{
+	width: 50%;
+	text-align: right;
+	padding: 20px;
+	float: left;
+}
+.controles a{
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.controles #control-azul:hover, .controles #control-gris:hover{
+	background: rgba(248, 124, 53, 0.9);
+}
+.controles #control-azul{
+	background: #2B9EA5;
+}
+.controles #control-gris{
+	background: #666;
+}
+
+/* Formularios */
+form{
+	width: 100%;	
+	background: #eee;
+	padding: 30px;	
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+	clear: both;
+}
+form fieldset{
+	border-radius: 5px;
+}
+form legend{
+	padding: 0 15px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+form label, form input, form textarea, select{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+form .form-enc{
+	text-align: center;
+	font-size: 1.3em;
+	padding-bottom: 30px;
+	border-bottom: 1px solid gray;
+}
+form .form-cuerpo{
+	padding: 30px 40px 40px 40px;
+}
+form .form-cuerpo label{
+	width: 15%;
+	padding-left: 20px;
+}
+form .form-cuerpo input, form .form-cuerpo textarea, form .form-cuerpo select{
+	width: 82%;
+	padding: 5px;
+}
+form .form-cuerpo input{
+	
+}
+form .form-cuerpo textarea{
+	resize: none;
+	height: 200px;
+}
+form .form-cuerpo #nombre, form .form-cuerpo #apellido, 
+form .form-cuerpo #perfil, form .form-cuerpo #estado{
+	width: 33.1%;
+}
+form .form-pie{
+	width: 92%;
+	border-top: 1px solid gray;	
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+}
+form .form-pie input{
+	font-size: 0.9em;
+	width: 80px;
+	padding: 10px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
+form .form-pie input[type="reset"]{
+	background: #666;
+}
+form .form-pie input[type="submit"]{
+	background: #2B9EA5;
+}
+
+/* Tablas */
+table {  
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+	background: #222;
+	color: #fff;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8em;
+}
+
+tr:nth-child(even) {
+  background: #dddddd;
+}
+td .fas:hover{
+	background: rgba(0,0,0,0.5);
+}
+.fa-edit, .fa-trash-alt{
+	display: inline-block;
+	padding: 5px;	
+	width: 30px;
+	height: 27px;
+	border-radius: 4px;	
+	font-size: 1.2em;
+	color: #fff;
+}
+.fa-edit{
+	background: rgb( 248, 124, 53);	
+}
+.fa-trash-alt{
+	background: #2B9EA5;
+}
+
+/* Reporte Usuarios */
+.reporte{
+	width: 90%;
+	margin: auto;
+	clear: both;
+}
+.reporte img{
+	width: 100%;
+}
+
+/* Iframe */
+iframe{
+	width: 100%;
+	height: 100vh;
+	border: 0;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Clases especiales */
+.opacidad{
+	background: rgba(0,0,0,0.5);
+	padding-top: 200px;
+	height: 100vh;
+}
+
+/* Cuerpo */
+body{
+	background-image: url('../img/fondo-form.png');
+	background-size: 100% 100%;	
+	background-attachment: fixed;
+}
+
+
+/* Contenedor */
+.contenedor{
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+/* Formularios */
+form{
+	width: 50%;
+	margin: auto;
+	border: 1px solid #aaa;
+	padding: 20px 20px 20px 20px;
+	background: #ddd;
+	border-radius: 10px;
+}
+.form-enc{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+h1{
+	text-align: center;
+	background: #eee;
+	padding:5px;
+}
+.form-cuerpo{
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #aaa;
+}
+label, input{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+label{
+	padding: 10px;
+	width: 30%;
+	text-align: right;
+}
+input{
+	padding: 10px;
+	width: 60%;
+}
+
+.form-pie{
+	width: 100%;
+	padding: 10px 10px 0 10px;
+	text-align: center;
+}
+a{
+	display: inline-block;
+	width: 90px;
+	height: 40px;
+	padding: 13px;
+	background: #aaa;
+	text-decoration: none;
+	text-align: center;
+	color: #333;
+	font-size: 0.8em;
+	border-radius: 5px;
+}
+.olvido{
+	padding: 0;
+	background: 0;
+	width: 180px;
+	text-align: right;
+}
+a:hover{
+	background: rgba(0,0,0,0.5);
+}
+.olvido:hover{
+	background: 0;
+	color: #999;
+}

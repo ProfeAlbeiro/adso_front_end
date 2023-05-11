@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Graficos</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="text-center">Gráfico</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<canvas id="canvas"></canvas>
+				<button id="save-btn">Guardar</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/filesaver.js"></script>
+	<script src="js/canvas-toBlob.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/grafico.js"></script>
+
+
+	<!-- <script>
+		$("#save-btn").click(function() {
+			$("#myChart").get(0).toBlob(function(blob) {
+				saveAs(blob, "chart_1.png");
+			});
+		});
+
+	</script> -->
+
+</body>
+</html>

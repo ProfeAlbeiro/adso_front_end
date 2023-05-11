@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css" media="screen">
+    input:valid{
+      border-color: green;
+    }
+    input:invalid{
+      border-color: red;
+    }
+      
+    </style>
+
+    <title>Hello, world!</title>
+    
+  </head>
+  <body>
+    
+
+<div class="container">
+  <!-- Content here -->
+
+
+   <div class="row"> 
+
+
+    <form action="estados.html">
+
+     <br/>
+     <br/>
+
+      <div class="form-group" >  
+      <label for="entrada1"> Nombre :</label>
+
+      <input type="text" 
+      name="entrada1"  
+      title="Ingrese un nombre valido"        
+      id="entrada1"
+      pattern="[A-Za-z]{5,8}"
+      required="true"> 
+      
+      </input>
+      <div/>
+
+
+     <div class="form-group" >  
+      <label for="entrada2"> Apellido :</label>
+
+      <input type="text" 
+      name="entrada2" 
+      title="Ingrese un apellido valido" 
+      pattern="[A-Za-z]{5,8}"       
+      id="entrada2"   
+      required="true"> 
+      </input>
+      <div/>
+
+
+       <div class="form-group" >  
+      <label for="entrada4"> Telefono :</label>
+
+      <input type="text" 
+      name="entrada4" 
+      pattern="[0-9]{7}" 
+      title="Ingrese un solo numeros"       
+      id="entrada4"   
+      required="true"> 
+      </input>
+      <div/>
+       <div class="form-group" >  
+      <label for="entrada5"> Movil :</label>
+
+      <input type="text" 
+      name="entrada5" 
+      pattern="[0-9]{10}" 
+      title="Ingrese un solo numeros"      
+      id="entrada5"   
+      required="true"> 
+      </input>
+      <div/>
+
+
+       <div class="form-group" >  
+      <label for="entrada3"> Color :</label>
+
+      <input type="text" 
+      name="entrada3" 
+      title="Escriba verde o rojo"
+      pattern="['verde'|'rojo']{3,8}"       
+      id="entrada3"   
+      required="true"> 
+      </input>
+      <div/>
+
+ <div class="form-group" >  
+      <label for="entrada6"> Buscar :</label>
+
+      <input type="search" 
+      name="entrada6" 
+    
+      id="entrada6"   
+      required="true"> 
+      </input>
+      <div/>
+
+
+
+
+      <button type="submin" >Enviar</button> 
+     
+
+
+     </form>
+
+     
+
+   </div>
+
+   
+ 
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

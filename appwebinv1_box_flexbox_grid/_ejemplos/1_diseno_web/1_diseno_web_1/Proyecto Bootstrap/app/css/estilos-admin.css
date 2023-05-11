@@ -1,0 +1,32 @@
+/* Sección Principal */
+.seccion-principal{
+	height: 84vh;
+}
+
+/* Barra Lateral */
+aside{
+	padding: 0!important;	
+}
+
+.mod-conf{
+	height: 20%;	
+}
+
+/* Área de Trabajo */
+main iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* Pie de Página */
+footer{
+	height: 8vh;
+}
+
+/* Estilos páginas con Iframe */
+iframe.iframe-pag{
+	width: 100%;
+	height: 70vh;
+	border: 0;
+}

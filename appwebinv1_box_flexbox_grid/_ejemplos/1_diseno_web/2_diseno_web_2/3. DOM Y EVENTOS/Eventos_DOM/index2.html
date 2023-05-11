@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apagar-prender</title>
+	<link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+	<h1>Contenedor y cambio de color</h1>
+	<section id="caja" >
+		<img id="espacio" src="imgs/sala.png" alt="sala">
+		<input type="color" id="favcolor" value="#000000" onchange="cambiarcolor()">
+	</section>
+
+	<div class="contenedorBotones">
+		<input class="boton1" id="checkboxPrender" onchange="apagarPrender()" checked="checked" type="checkbox">Contenedor visible<br>
+		<input class="boton2" id="boton" type="button" value="Cambio" onclick="apagarPrender()">	
+		<input class="boton3" type="button" value="Apagar" onclick="apagar()">	
+		<input class="boton4" type="button" value="Encender" onclick="prender()">
+	</div>
+	
+	<script src="js/eventos2.js"></script>	
+</body>
+</html>

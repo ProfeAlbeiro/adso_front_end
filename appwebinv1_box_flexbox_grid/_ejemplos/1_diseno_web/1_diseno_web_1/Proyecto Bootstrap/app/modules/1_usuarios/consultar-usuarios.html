@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consultar Usuario</title>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="../paginas-principales/admin-principal.html">Inicio</a></li>
+			<li class="breadcrumb-item active"><a href="#">Módulo Usuario</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Consultar Usuarios</li>
+		</ol>
+	</nav>
+	<h1>Consultar Usuario</h1>
+	<div class="conteiner">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">id</th>
+					<th scope="col">Nombre</th>
+					<th scope="col">Apellidos</th>
+					<th scope="col">doc</th>
+					<th scope="col">Estado</th>
+					<th scope="col">User</th>
+					<th scope="col">Password</th>
+					<th scope="col">Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">ABC145</th>
+					<td>Pepito</td>
+					<td>Perez</td>
+					<td>123456789</td>
+					<td>Activo</td>
+					<td>superperez</td>
+					<td>12345</td>
+					<td>
+						<a href="actualizar-usuario.html">Actualizar</a>
+						<a href="">Eliminar</a>
+					</td>					
+				</tr>
+				<tr>
+					<th scope="row">ABC146</th>
+					<td>Mariana</td>
+					<td>Rodríguez</td>
+					<td>9876543</td>
+					<td>Inactivo</td>
+					<td>mariaro</td>
+					<td>78965</td>
+					<td>
+						<a href="actualizar-usuario.html">Actualizar</a>
+						<a href="">Eliminar</a>
+					</td>					
+				</tr>				
+			</tbody>
+		</table>		
+	</div>
+	<script src="../../js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../js/popper.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

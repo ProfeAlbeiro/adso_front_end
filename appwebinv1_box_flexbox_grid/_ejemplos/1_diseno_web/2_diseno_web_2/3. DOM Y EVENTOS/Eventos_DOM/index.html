@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos_funciones</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<section id="caja" class="caja" onmouseover="cambiarFondo()">
+		<article>
+			<h1>Texto 1</h1>
+			<p id="texto" class="reiniciar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolorum nesciunt adipisci laborum in accusantium commodi perferendis reiciendis illum magnam facere, nemo neque asperiores aspernatur architecto veritatis non cum dolore.</p>
+			<button onclick="cambiarColorId()">Cambia el color del texto con id</button>	
+		</article>
+		<article>
+			<h1>Texto 2</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolorum nesciunt adipisci laborum in accusantium commodi perferendis reiciendis illum magnam facere, nemo neque asperiores aspernatur architecto veritatis non cum dolore.</p>
+			<button onclick="cambiarColorTag()">Cambia el color del texto con tag</button>
+		</article>
+		<article>
+			<h1>Texto 3</h1>
+			<p name="prueba">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolorum nesciunt adipisci laborum in accusantium commodi perferendis reiciendis illum magnam facere, nemo neque asperiores aspernatur architecto veritatis non cum dolore.</p>
+			<button onclick="cambiarColorName()">Cambia el color del fondo con name</button>
+		</article>
+	</section>
+
+	<script src="js/eventos.js"></script>
+</body>
+</html>
+
+
